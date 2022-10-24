@@ -47,8 +47,7 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px
   /* outline: auto; */
 }
 
@@ -84,10 +83,12 @@ header {
 .header-group {
   display: flex;
   align-items: center;
-  margin: auto;
+  margin-left: auto;
+
+ 
 }
 
-.header-email {
+.header-group-item:first-child {
   margin-right: 50px;
 }
 .nav-list-item:not(:last-child) {
@@ -122,7 +123,7 @@ header {
   letter-spacing: 0.02em;
   color: var(--titles-color);
   display: block;
-  padding: 52px 0px;
+  padding: 32px 0px;
 }
 
 .header-nav-link:hover,
@@ -137,6 +138,7 @@ header {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-color);
+  padding: 32px 0px;
 }
 
 .header-tel:hover,
@@ -151,7 +153,7 @@ header {
 
 .hero {
   background-color: var(--dark-bcg);
-  padding: 200px 200px;
+  padding: 200px 0px;
 }
 
 .hero-title {
@@ -234,6 +236,7 @@ max-height: 98px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--titles-color);
+  margin-bottom: 10px;
 }
 
 .advantage-item {
@@ -280,7 +283,6 @@ max-height: 98px;
   padding-bottom: 30px;
   background-color: var(--second-color);
   border-radius: 0px 0px 4px 4px;
-  max-width: 270px;
 }
 .person {
   font-weight: 500;
@@ -305,6 +307,7 @@ max-height: 98px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--titles-color);
+  margin-bottom: 4px;
 
 }
 
@@ -345,6 +348,11 @@ max-height: 98px;
   color: var(--accent-color);
 }
 
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .futer-logo {
   display: block;
   font-family: "Raleway";
@@ -353,7 +361,6 @@ max-height: 98px;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -361,9 +368,6 @@ max-height: 98px;
   margin-bottom: 9px;
 }
 
-.futer-item:last-child{
-  padding-bottom: 60px;
-}
 .futer-first-part {
   color: var(--accent-color);
 }
@@ -387,11 +391,9 @@ max-height: 98px;
 
 .filters {
   display: flex;
-  max-width: 575px;
-  justify-content: space-between;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
   margin-bottom: 50px;
+  gap: 8px;
 }
 
 .portfolio-list {
