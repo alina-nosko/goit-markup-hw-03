@@ -38,6 +38,7 @@ img {
   display: block;
 }
 
+
 .link {
   text-decoration: none;
   color: currentColor;
@@ -325,15 +326,18 @@ max-height: 98px;
 
 .footer {
   background-color: var(--dark-bcg);
+  padding-bottom: 60px;
 }
 
 .address {
+  display: block;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--second-color);
+  text-align: left;
   
 }
 
@@ -343,7 +347,7 @@ max-height: 98px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  display: block;
+  /* display: block; */
 }
 
 .address:hover,
@@ -353,10 +357,6 @@ max-height: 98px;
   color: var(--accent-color);
 }
 
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 
 .futer-logo {
   display: block;
@@ -367,10 +367,20 @@ max-height: 98px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+  padding-top: 60px;
+  text-align: left;
+  
 }
 
 .futer-item:not(:last-child) {
   margin-bottom: 9px;
+  display: block;
+  text-align: left;
+}
+
+.contacts {
+  display: block;
+  text-align: left;
 }
 
 .futer-first-part {
@@ -380,6 +390,7 @@ max-height: 98px;
 .futer-second-part {
   color: var(--second-color);
 }
+
 
 .visually-hidden {
   position: absolute;
